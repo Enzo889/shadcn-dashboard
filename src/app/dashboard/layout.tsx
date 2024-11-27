@@ -40,7 +40,7 @@ export default function DashboardLayout({
 }) {
   return (
     <>
-      <nav className="bg-white border-b border-gray-200 fixed z-30 w-full dark:bg-slate-900 dark:border-slate-700">
+      <nav className="bg-white border-b border-zinc-200 fixed z-30 w-full dark:bg-zinc-950 dark:border-zinc-900">
         <div className="px-3 py-3 lg:px-5 lg:pl-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-start">
@@ -48,7 +48,7 @@ export default function DashboardLayout({
                 id="toggleSidebarMobile"
                 aria-expanded="true"
                 aria-controls="sidebar"
-                className="lg:hidden mr-2 text-gray-600 hover:text-gray-900 cursor-pointer p-2 hover:bg-gray-100 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100 rounded"
+                className="lg:hidden mr-2 text-gray-600 hover:text-gray-950 cursor-pointer p-2 hover:bg-gray-100 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100 rounded"
               >
                 <svg
                   id="toggleSidebarMobileHamburger"
@@ -130,21 +130,21 @@ export default function DashboardLayout({
           </div>
         </div>
       </nav>
-      <div className="flex overflow-hidden bg-white pt-16 dark:bg-slate-900">
+      <div className="flex overflow-hidden bg-white pt-16 dark:bg-zinc-950">
         <aside
           id="sidebar"
           className="fixed hidden z-20 h-full top-0 left-0 pt-16 lg:flex flex-shrink-0 flex-col w-64 transition-width duration-75"
           aria-label="Sidebar"
         >
-          <div className="relative flex-1 flex flex-col min-h-0 borderR border-gray-200 bg-white  pt-0 dark:bg-slate-900">
+          <div className="relative flex-1 flex flex-col min-h-0 borderR border-gray-200 bg-white  pt-0 dark:bg-zinc-950">
             <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-              <div className="flex-1 px-3 bg-white  divide-y space-y-1 dark:bg-slate-900">
+              <div className="flex-1 px-3 bg-white  divide-y space-y-1 dark:bg-zinc-950">
                 <ul className="space-y-2 pb-2">
                   {links.map((link) => (
                     <li key={link.href}>
                       <Link
                         href={link.href}
-                        className="text-base capitalize text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-slate-300"
+                        className="text-base capitalize text-gray-950 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:text-zinc-300"
                       >
                         <span className="ml-3">{link.name}</span>
                       </Link>
@@ -156,7 +156,7 @@ export default function DashboardLayout({
           </div>
         </aside>
         <div
-          className="bg-gray-900 opacity-50 hidden fixed inset-0 z-10"
+          className="bg-gray-950 opacity-50 hidden fixed inset-0 z-10"
           id="sidebarBackdrop"
         ></div>
         <div
@@ -166,13 +166,13 @@ export default function DashboardLayout({
           <main>
             <div className="pt-6 px-4">
               <div className="w-full min-h-[calc(100vh-230px)]">
-                <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 dark:bg-slate-900">
+                <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 dark:bg-zinc-950">
                   {children}
                 </div>
               </div>
             </div>
           </main>
-          <footer className="bg-white md:flex md:items-center md:justify-between shadow rounded-lg p-4 md:p-6 xl:p-8 my-6 mx-4 print:hidden dark:bg-slate-900">
+          <footer className="bg-white md:flex md:items-center md:justify-between shadow rounded-lg p-4 md:p-6 xl:p-8 my-6 mx-4 print:hidden dark:bg-zinc-950">
             <ul className="flex items-center flex-wrap mb-6 md:mb-0">
               <li>
                 <a
@@ -216,7 +216,7 @@ export default function DashboardLayout({
               </li>
             </ul>
             <div className="flex sm:justify-center space-x-6">
-              <a href="#" className="text-gray-500 hover:text-gray-900">
+              <a href="#" className="text-gray-500 hover:text-gray-950">
                 <svg
                   className="h-5 w-5"
                   fill="currentColor"
@@ -230,7 +230,7 @@ export default function DashboardLayout({
                   />
                 </svg>
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900">
+              <a href="#" className="text-gray-500 hover:text-gray-950">
                 <svg
                   className="h-5 w-5"
                   fill="currentColor"
@@ -244,7 +244,7 @@ export default function DashboardLayout({
                   />
                 </svg>
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900">
+              <a href="#" className="text-gray-500 hover:text-gray-950">
                 <svg
                   className="h-5 w-5"
                   fill="currentColor"
@@ -254,7 +254,7 @@ export default function DashboardLayout({
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900">
+              <a href="#" className="text-gray-500 hover:text-gray-950">
                 <svg
                   className="h-5 w-5"
                   fill="currentColor"
@@ -268,7 +268,7 @@ export default function DashboardLayout({
                   />
                 </svg>
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-900">
+              <a href="#" className="text-gray-500 hover:text-gray-950">
                 <svg
                   className="h-5 w-5"
                   fill="currentColor"
