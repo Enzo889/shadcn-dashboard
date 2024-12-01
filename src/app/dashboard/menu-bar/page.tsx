@@ -113,8 +113,10 @@ export default function Page() {
         </MenubarMenu>
       </Menubar>
 
-      <h1 className="text-3xl mt-5">Productos</h1>
-      <p>
+      <h1 className="text-3xl mt-5  underline underline-offset-4 ">
+        Productos
+      </h1>
+      <p className="text-base text-pretty p-2">
         Deserunt pariatur id magna excepteur do deserunt Lorem id irure. Ipsum
         eu deserunt qui occaecat laboris culpa voluptate eiusmod. Laborum
         excepteur sunt ex anim aliqua aliqua.

@@ -28,9 +28,10 @@ export default function Page() {
       <Progress
         value={progress}
         indicatorColor={cn({
-          "bg-red-500": progress < 50,
-          "bg-yellow-500": progress >= 50 && progress < 80,
-          "bg-green-500": progress >= 80,
+          "bg-gradient-to-tr from-rose-500 to-red-600": progress < 50,
+          "bg-gradient-to-tr from-sky-400 to-sky-600":
+            progress >= 50 && progress < 80,
+          "bg-gradient-to-tr from-green-400 to-green-600": progress >= 80,
         })}
       />
     </div>

@@ -35,7 +35,9 @@ export default function Page() {
 
       {SHEET_SIDES.map((side) => (
         <Sheet key={side}>
-          <SheetTrigger>Open {side}</SheetTrigger>
+          <SheetTrigger className="bg-primary text-primary-foreground shadow hover:bg-primary/90 rounded-md h-9 px-4 py-2">
+            Open {side}
+          </SheetTrigger>
           <SheetContent side={side}>
             <SheetHeader>
               <SheetTitle>Are you absolutely sure?</SheetTitle>
