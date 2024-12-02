@@ -37,7 +37,7 @@ export default async function Page() {
           </CardHeader>
 
           <CardFooter className="flex justify-end">
-            <Button>Más</Button>
+            <Button variant={"secondary"}>Más</Button>
           </CardFooter>
         </Card>
       ))}

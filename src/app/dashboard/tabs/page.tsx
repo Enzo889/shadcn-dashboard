@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tab1 } from "./ui/tab1";
 import { Tab2 } from "./ui/tab2";
+import { Tab3 } from "./ui/tab3";
 
 export default function Page() {
   return (
@@ -18,7 +19,7 @@ export default function Page() {
           <Tab2 />
         </TabsContent>
         <TabsContent value="user">
-          <div>User</div>
+          <Tab3 />
         </TabsContent>
       </Tabs>
     </div>
