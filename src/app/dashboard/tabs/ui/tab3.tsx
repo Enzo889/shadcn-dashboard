@@ -23,12 +23,12 @@ export const Tab3 = () => {
           <Input id="current" type="text" />
         </div>
         <div className="space-y-1">
-          <Label htmlFor="new">New User</Label>
+          <Label htmlFor="new">New User Name</Label>
           <Input id="new" type="text" />
         </div>
       </CardContent>
       <CardFooter>
-        <Button>Save User</Button>
+        <Button>Save New User Name</Button>
       </CardFooter>
     </Card>
   );
