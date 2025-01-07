@@ -36,6 +36,7 @@ const formSchema = z
     dateOfBirth: z.date({
       required_error: "A date of birth is required.",
     }),
+    securityEmails: z.boolean().default(false),
     marketingEmails: z.boolean().default(false),
   })
   .refine((data) => data.marketingEmails === true, {
@@ -77,7 +78,7 @@ export default function Page() {
               <FormItem>
                 <FormLabel>Username</FormLabel>
                 <FormControl>
-                  <Input placeholder="shadcn" {...field} />
+                  <Input placeholder="username here" {...field} />
                 </FormControl>
                 <FormDescription>
                   This is your public display name.
@@ -198,6 +199,27 @@ export default function Page() {
                   <FormLabel>Marketing emails</FormLabel>
                   <FormDescription>
                     Receive emails about your account.
+                  </FormDescription>
+                </div>
+                <FormControl>
+                  <Switch
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                  />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="securityEmails"
+            render={({ field }) => (
+              <FormItem className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm col-span-1 sm:col-span-2 ">
+                <div className="space-y-0.5">
+                  <FormLabel>Security emails</FormLabel>
+                  <FormDescription>
+                    Receive emails about your account security.
                   </FormDescription>
                 </div>
                 <FormControl>
